@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SlmLastTurnApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SlmLastTurnApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SlmLastTurnApplication.class, args);
+    }
 
 }
