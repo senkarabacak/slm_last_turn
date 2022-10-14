@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class PostController {
-
+/*
     @PostMapping(path= "/calculate", consumes = "application/json", produces = "application/json")
     public String post_calculate(("kreis",5,6) {
         return post_calculate(null);
@@ -17,5 +17,5 @@ public class PostController {
     public boolean post_calculate(@RequestBody calc newcalc("kreis",2,5))
     {
         return true;
-    }
+    } */
 }
