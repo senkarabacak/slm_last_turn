@@ -3,13 +3,15 @@ package com.example.slm_last_turn;
 
 import org.springframework.web.bind.annotation.*;
 
+import javax.xml.crypto.Data;
+
 @RestController
 public class CalcController {
 
 
     @GetMapping("/calculate")
     @ResponseBody
-    public double calculator(@RequestParam String form, @RequestParam int b, @RequestParam(required = false) int c) {
+    public double calculate(@RequestParam String form, @RequestParam int b, @RequestParam(defaultValue = "1") int c) {
 
 
         if(form.equals("kreis")){
@@ -24,8 +26,9 @@ public class CalcController {
 
 
     @PostMapping(path= "/calculator", consumes = "application/json", produces = "application/json")
-   public String post_calculator(@RequestBody CalcController CalcController)
+   public String post_calculator(@RequestBody calc calc)
     {
+        Data.add(new calc("form", 1,2));
        return "{\"test\": \"sended @ResponseBody\"}";
     }
 }
